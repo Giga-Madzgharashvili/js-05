@@ -16,7 +16,7 @@ let ulList = document.querySelector(".ul-list");
 formElement.addEventListener("submit", function (x) {
   x.preventDefault();
   let value = item.value;
-  if (value == " ") {
+  if (value == "") {
     return;
   }
 
@@ -31,11 +31,11 @@ formElement.addEventListener("submit", function (x) {
   li.innerText = value;
   ulList.appendChild(li);
   li.appendChild(deleteBtn);
-  item.value = " ";
+  item.value = "";
 });
 
 clear.addEventListener("click", function () {
-  ulList.innerHTML = " ";
+  ulList.innerHTML = "";
 });
 
 item.addEventListener("focus", function () {
