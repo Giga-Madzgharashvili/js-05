@@ -38,6 +38,15 @@ clear.addEventListener("click", function () {
   ulList.innerHTML = "";
 });
 
-item.addEventListener("focus", function () {
+formElement.addEventListener("focusin", onfocusFunction);
+formElement.addEventListener("focusout", offFocusFunction);
+
+function onfocusFunction(){
+  item.style.background = "#d1edf2";
   item.style.border = "2px solid lightblue";
-});
+}
+
+function offFocusFunction(){
+  item.style.background = "";
+  item.style.border = "";
+}
