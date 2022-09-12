@@ -35,7 +35,12 @@ formElement.addEventListener("submit", function (x) {
 });
 
 clear.addEventListener("click", function () {
+  let text = "are you sure?";
+  if (confirm(text) == true){
   ulList.innerHTML = "";
+  } else {
+    return;
+  }
 });
 
 item.addEventListener("focusin", onfocusFunction);
