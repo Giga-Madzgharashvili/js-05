@@ -8,6 +8,11 @@ header {
     padding: 30px;
     background: lightblue;
 }
+.logo a{
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+}
 
 .header-wrapper {
     display: flex;
@@ -79,6 +84,7 @@ header {
     color: red;
     margin-left: 10px;
     font-size: 14px;
+    cursor: pointer;
 }
 
 #todo {

@@ -22,6 +22,7 @@ formElement.addEventListener("submit", function (x) {
 
   let li = document.createElement("li");
   li.classList.add("item-li");
+ //   create font awesome icon
   let deleteBtn = document.createElement("i");
   deleteBtn.classList.add("fa-solid", "fa-trash", "delete");
   deleteBtn.addEventListener("click", function () {
