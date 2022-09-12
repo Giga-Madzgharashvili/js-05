@@ -38,3 +38,7 @@ formElement.addEventListener("submit", function(x){
 clear.addEventListener("click", function(){
     ulList.innerHTML = " ";
 })
+
+item.addEventListener("focus", function(){
+    item.style.border = "2px solid lightblue";
+})
