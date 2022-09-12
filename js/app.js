@@ -22,7 +22,7 @@ formElement.addEventListener("submit", function (x) {
 
   let li = document.createElement("li");
   li.classList.add("item-li");
- //   create font awesome icon
+  //   create font awesome icon
   let deleteBtn = document.createElement("i");
   deleteBtn.classList.add("fa-solid", "fa-trash", "delete");
   deleteBtn.addEventListener("click", function () {
@@ -38,15 +38,15 @@ clear.addEventListener("click", function () {
   ulList.innerHTML = "";
 });
 
-formElement.addEventListener("focusin", onfocusFunction);
-formElement.addEventListener("focusout", offFocusFunction);
+item.addEventListener("focusin", onfocusFunction);
+item.addEventListener("focusout", offFocusFunction);
 
-function onfocusFunction(){
+function onfocusFunction() {
   item.style.background = "#d1edf2";
   item.style.border = "2px solid lightblue";
 }
 
-function offFocusFunction(){
+function offFocusFunction() {
   item.style.background = "";
   item.style.border = "";
 }
