@@ -4,22 +4,24 @@
     margin: 0 auto;
 }
 
-header{
+header {
     padding: 30px;
     background: lightblue;
 }
 
-.header-wrapper{
+.header-wrapper {
     display: flex;
     justify-content: space-between;
-   
+
 }
-.navigation{
+
+.navigation {
     max-width: 240px;
     width: 100%;
 }
-.nav-ul{
-  
+
+.nav-ul {
+
     display: flex;
     justify-content: space-between;
 }
@@ -29,9 +31,10 @@ header{
     font-size: 20px;
     font-weight: bold;
     color: black;
-    
+
 }
-.burger{
+
+.burger {
     position: fixed;
     top: 24px;
     right: 30px;
@@ -44,16 +47,17 @@ header{
     padding: 2px 2px 2px 3px;
     display: none;
 }
-.line{
+
+.line {
     width: 100%;
     height: 3px;
     background: black;
     transition: transform 0.2s ease-out;
 
 }
-   
+
 .list-active .line1 {
-    
+
     transform: scale(0.9) rotate(-45deg) translate(-6px, 4px);
 }
 
@@ -62,19 +66,22 @@ header{
 }
 
 .list-active .line3 {
-   
+
     transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
 }
-.section{
+
+.section {
     margin-top: 80px;
-   
+
 }
+
 .delete {
     color: red;
     margin-left: 10px;
     font-size: 14px;
 }
-#todo{
+
+#todo {
     max-width: 500px;
     width: 100%;
     height: 60px;
@@ -82,9 +89,11 @@ header{
     border: none;
     padding: 15px;
 }
+
 #todo::placeholder {
     color: #000;
 }
+
 #add_btn {
     width: 150px;
     height: 60px;
@@ -92,6 +101,7 @@ header{
     cursor: pointer;
     border-radius: 6px;
 }
+
 #clear_all {
     margin-top: 20px;
     width: 150px;
@@ -105,29 +115,31 @@ header{
     margin: 20px 0;
 }
 
-@media(max-width: 780px){
-.nav-ul.nav-active {
+@media(max-width: 780px) {
+    .nav-ul.nav-active {
 
-    height: 100vh;
-    position: absolute;
-    top: 76px;
-    left: -44px;
-    background-color: lightblue;
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    flex-direction: column;
-    padding: 80px;
-}
-.nav-ul {
-    display: none;
-}
+        height: 100vh;
+        position: absolute;
+        top: 76px;
+        left: -44px;
+        background-color: lightblue;
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 80px;
+    }
 
-.burger {
-    display: flex;
-}
-.nav-li {
-    margin-bottom: 10px;
-}
+    .nav-ul {
+        display: none;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .nav-li {
+        margin-bottom: 10px;
+    }
 }
